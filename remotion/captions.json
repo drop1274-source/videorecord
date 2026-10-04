@@ -1,0 +1,1052 @@
+[
+  {
+    "text": " Hey,",
+    "startMs": 0,
+    "endMs": 1040,
+    "timestampMs": 1800,
+    "confidence": 0.720876
+  },
+  {
+    "text": " I'm",
+    "startMs": 1040,
+    "endMs": 1820,
+    "timestampMs": 2440,
+    "confidence": 0.927982
+  },
+  {
+    "text": " Saransh,",
+    "startMs": 1820,
+    "endMs": 3520,
+    "timestampMs": 2860,
+    "confidence": 0.462491
+  },
+  {
+    "text": " a full-stack",
+    "startMs": 3520,
+    "endMs": 3750,
+    "timestampMs": 4220,
+    "confidence": 0.714441
+  },
+  {
+    "text": " engineer",
+    "startMs": 3750,
+    "endMs": 4130,
+    "timestampMs": 4480,
+    "confidence": 0.235414
+  },
+  {
+    "text": " with",
+    "startMs": 4130,
+    "endMs": 4500,
+    "timestampMs": 4880,
+    "confidence": 0.0313992
+  },
+  {
+    "text": " around",
+    "startMs": 4500,
+    "endMs": 4870,
+    "timestampMs": 5240,
+    "confidence": 0.454825
+  },
+  {
+    "text": " three",
+    "startMs": 4870,
+    "endMs": 5050,
+    "timestampMs": 5460,
+    "confidence": 0.344506
+  },
+  {
+    "text": " years",
+    "startMs": 5050,
+    "endMs": 5360,
+    "timestampMs": 5200,
+    "confidence": 0.0965141
+  },
+  {
+    "text": " of",
+    "startMs": 5360,
+    "endMs": 5660,
+    "timestampMs": 5500,
+    "confidence": 0.0965141
+  },
+  {
+    "text": " experience",
+    "startMs": 5660,
+    "endMs": 6340,
+    "timestampMs": 6140,
+    "confidence": 0.984881
+  },
+  {
+    "text": " building",
+    "startMs": 6340,
+    "endMs": 6670,
+    "timestampMs": 6540,
+    "confidence": 0.538602
+  },
+  {
+    "text": " software.",
+    "startMs": 6670,
+    "endMs": 7600,
+    "timestampMs": 6980,
+    "confidence": 0.993415
+  },
+  {
+    "text": " I'm",
+    "startMs": 7600,
+    "endMs": 7780,
+    "timestampMs": 7740,
+    "confidence": 0.991541
+  },
+  {
+    "text": " currently",
+    "startMs": 7780,
+    "endMs": 8330,
+    "timestampMs": 8200,
+    "confidence": 0.998742
+  },
+  {
+    "text": " looking",
+    "startMs": 8330,
+    "endMs": 8760,
+    "timestampMs": 8500,
+    "confidence": 0.986634
+  },
+  {
+    "text": " for",
+    "startMs": 8760,
+    "endMs": 8940,
+    "timestampMs": 8800,
+    "confidence": 0.98828
+  },
+  {
+    "text": " my",
+    "startMs": 8940,
+    "endMs": 9060,
+    "timestampMs": 9000,
+    "confidence": 0.458952
+  },
+  {
+    "text": " next",
+    "startMs": 9060,
+    "endMs": 9400,
+    "timestampMs": 9280,
+    "confidence": 0.991027
+  },
+  {
+    "text": " role",
+    "startMs": 9400,
+    "endMs": 9540,
+    "timestampMs": 9600,
+    "confidence": 0.308196
+  },
+  {
+    "text": " where",
+    "startMs": 9540,
+    "endMs": 9840,
+    "timestampMs": 9900,
+    "confidence": 0.715833
+  },
+  {
+    "text": " I",
+    "startMs": 9840,
+    "endMs": 9900,
+    "timestampMs": 10060,
+    "confidence": 0.976967
+  },
+  {
+    "text": " can",
+    "startMs": 9900,
+    "endMs": 10070,
+    "timestampMs": 10240,
+    "confidence": 0.993688
+  },
+  {
+    "text": " take",
+    "startMs": 10070,
+    "endMs": 10310,
+    "timestampMs": 10460,
+    "confidence": 0.966283
+  },
+  {
+    "text": " more",
+    "startMs": 10310,
+    "endMs": 10560,
+    "timestampMs": 10760,
+    "confidence": 0.976904
+  },
+  {
+    "text": " ownership",
+    "startMs": 10560,
+    "endMs": 11140,
+    "timestampMs": 11100,
+    "confidence": 0.990822
+  },
+  {
+    "text": " and",
+    "startMs": 11140,
+    "endMs": 11290,
+    "timestampMs": 11480,
+    "confidence": 0.969231
+  },
+  {
+    "text": " bigger",
+    "startMs": 11290,
+    "endMs": 11720,
+    "timestampMs": 11700,
+    "confidence": 0.986227
+  },
+  {
+    "text": " problems.",
+    "startMs": 11720,
+    "endMs": 13280,
+    "timestampMs": 12240,
+    "confidence": 0.965722
+  },
+  {
+    "text": " Over",
+    "startMs": 13280,
+    "endMs": 13540,
+    "timestampMs": 13340,
+    "confidence": 0.994788
+  },
+  {
+    "text": " the",
+    "startMs": 13540,
+    "endMs": 13740,
+    "timestampMs": 13520,
+    "confidence": 0.994647
+  },
+  {
+    "text": " last",
+    "startMs": 13740,
+    "endMs": 14000,
+    "timestampMs": 13720,
+    "confidence": 0.963166
+  },
+  {
+    "text": " few",
+    "startMs": 14000,
+    "endMs": 14200,
+    "timestampMs": 13940,
+    "confidence": 0.928189
+  },
+  {
+    "text": " years,",
+    "startMs": 14200,
+    "endMs": 14660,
+    "timestampMs": 14200,
+    "confidence": 0.99456
+  },
+  {
+    "text": " I",
+    "startMs": 14660,
+    "endMs": 14720,
+    "timestampMs": 14580,
+    "confidence": 0.993087
+  },
+  {
+    "text": " worked",
+    "startMs": 14720,
+    "endMs": 15110,
+    "timestampMs": 14880,
+    "confidence": 0.538253
+  },
+  {
+    "text": " on",
+    "startMs": 15110,
+    "endMs": 15250,
+    "timestampMs": 15100,
+    "confidence": 0.972904
+  },
+  {
+    "text": " e-commerce",
+    "startMs": 15250,
+    "endMs": 15890,
+    "timestampMs": 15220,
+    "confidence": 0.93471
+  },
+  {
+    "text": " platforms,",
+    "startMs": 15890,
+    "endMs": 16610,
+    "timestampMs": 15940,
+    "confidence": 0.874835
+  },
+  {
+    "text": " CRM",
+    "startMs": 16610,
+    "endMs": 16800,
+    "timestampMs": 16440,
+    "confidence": 0.932562
+  },
+  {
+    "text": " and",
+    "startMs": 16800,
+    "endMs": 17000,
+    "timestampMs": 16800,
+    "confidence": 0.601426
+  },
+  {
+    "text": " ERP",
+    "startMs": 17000,
+    "endMs": 17190,
+    "timestampMs": 16980,
+    "confidence": 0.897167
+  },
+  {
+    "text": " solutions,",
+    "startMs": 17190,
+    "endMs": 17910,
+    "timestampMs": 17520,
+    "confidence": 0.729931
+  },
+  {
+    "text": " AI",
+    "startMs": 17910,
+    "endMs": 18090,
+    "timestampMs": 18260,
+    "confidence": 0.87377
+  },
+  {
+    "text": " integrations,",
+    "startMs": 18090,
+    "endMs": 19080,
+    "timestampMs": 18700,
+    "confidence": 0.95152
+  },
+  {
+    "text": " AI",
+    "startMs": 19080,
+    "endMs": 19210,
+    "timestampMs": 19380,
+    "confidence": 0.861525
+  },
+  {
+    "text": " page",
+    "startMs": 19210,
+    "endMs": 19480,
+    "timestampMs": 19600,
+    "confidence": 0.815298
+  },
+  {
+    "text": " builders,",
+    "startMs": 19480,
+    "endMs": 20280,
+    "timestampMs": 19940,
+    "confidence": 0.795226
+  },
+  {
+    "text": " mobile",
+    "startMs": 20280,
+    "endMs": 20550,
+    "timestampMs": 20520,
+    "confidence": 0.913806
+  },
+  {
+    "text": " apps,",
+    "startMs": 20550,
+    "endMs": 20950,
+    "timestampMs": 20800,
+    "confidence": 0.987705
+  },
+  {
+    "text": " admin",
+    "startMs": 20950,
+    "endMs": 21280,
+    "timestampMs": 21560,
+    "confidence": 0.883499
+  },
+  {
+    "text": " dashboards,",
+    "startMs": 21280,
+    "endMs": 22020,
+    "timestampMs": 21900,
+    "confidence": 0.386928
+  },
+  {
+    "text": " business",
+    "startMs": 22020,
+    "endMs": 22560,
+    "timestampMs": 22720,
+    "confidence": 0.988764
+  },
+  {
+    "text": " websites,",
+    "startMs": 22560,
+    "endMs": 23050,
+    "timestampMs": 23140,
+    "confidence": 0.816283
+  },
+  {
+    "text": " and",
+    "startMs": 23050,
+    "endMs": 23230,
+    "timestampMs": 23460,
+    "confidence": 0.738553
+  },
+  {
+    "text": " custom",
+    "startMs": 23230,
+    "endMs": 23840,
+    "timestampMs": 23800,
+    "confidence": 0.51408
+  },
+  {
+    "text": " web",
+    "startMs": 23840,
+    "endMs": 23960,
+    "timestampMs": 24040,
+    "confidence": 0.413482
+  },
+  {
+    "text": " applications.",
+    "startMs": 23960,
+    "endMs": 25320,
+    "timestampMs": 24420,
+    "confidence": 0.579613
+  },
+  {
+    "text": " But",
+    "startMs": 25320,
+    "endMs": 25690,
+    "timestampMs": 25380,
+    "confidence": 0.460144
+  },
+  {
+    "text": " the",
+    "startMs": 25690,
+    "endMs": 25790,
+    "timestampMs": 25580,
+    "confidence": 0.871938
+  },
+  {
+    "text": " project",
+    "startMs": 25790,
+    "endMs": 26260,
+    "timestampMs": 25960,
+    "confidence": 0.992587
+  },
+  {
+    "text": " that",
+    "startMs": 26260,
+    "endMs": 26460,
+    "timestampMs": 26240,
+    "confidence": 0.978299
+  },
+  {
+    "text": " shaped",
+    "startMs": 26460,
+    "endMs": 26860,
+    "timestampMs": 26560,
+    "confidence": 0.091276
+  },
+  {
+    "text": " me",
+    "startMs": 26860,
+    "endMs": 26990,
+    "timestampMs": 26820,
+    "confidence": 0.779062
+  },
+  {
+    "text": " the",
+    "startMs": 26990,
+    "endMs": 27190,
+    "timestampMs": 26960,
+    "confidence": 0.846602
+  },
+  {
+    "text": " most",
+    "startMs": 27190,
+    "endMs": 27460,
+    "timestampMs": 27220,
+    "confidence": 0.885566
+  },
+  {
+    "text": " was",
+    "startMs": 27460,
+    "endMs": 27660,
+    "timestampMs": 27540,
+    "confidence": 0.828892
+  },
+  {
+    "text": " the",
+    "startMs": 27660,
+    "endMs": 27890,
+    "timestampMs": 27720,
+    "confidence": 0.889113
+  },
+  {
+    "text": " e-commerce",
+    "startMs": 27890,
+    "endMs": 28510,
+    "timestampMs": 27880,
+    "confidence": 0.990673
+  },
+  {
+    "text": " platform,",
+    "startMs": 28510,
+    "endMs": 29180,
+    "timestampMs": 28500,
+    "confidence": 0.973556
+  },
+  {
+    "text": " I",
+    "startMs": 29180,
+    "endMs": 29240,
+    "timestampMs": 28860,
+    "confidence": 0.842369
+  },
+  {
+    "text": " built",
+    "startMs": 29240,
+    "endMs": 29620,
+    "timestampMs": 29200,
+    "confidence": 0.335274
+  },
+  {
+    "text": " end-to-end,",
+    "startMs": 29620,
+    "endMs": 30320,
+    "timestampMs": 29800,
+    "confidence": 0.955736
+  },
+  {
+    "text": " I",
+    "startMs": 30320,
+    "endMs": 30400,
+    "timestampMs": 30480,
+    "confidence": 0.989863
+  },
+  {
+    "text": " worked",
+    "startMs": 30400,
+    "endMs": 30760,
+    "timestampMs": 30700,
+    "confidence": 0.988604
+  },
+  {
+    "text": " on",
+    "startMs": 30760,
+    "endMs": 30920,
+    "timestampMs": 30920,
+    "confidence": 0.979309
+  },
+  {
+    "text": " everything",
+    "startMs": 30920,
+    "endMs": 31800,
+    "timestampMs": 31320,
+    "confidence": 0.996447
+  },
+  {
+    "text": " from",
+    "startMs": 31800,
+    "endMs": 32150,
+    "timestampMs": 32060,
+    "confidence": 0.830466
+  },
+  {
+    "text": " front-end",
+    "startMs": 32150,
+    "endMs": 32930,
+    "timestampMs": 32740,
+    "confidence": 0.964893
+  },
+  {
+    "text": " and",
+    "startMs": 32930,
+    "endMs": 33190,
+    "timestampMs": 33180,
+    "confidence": 0.964492
+  },
+  {
+    "text": " back-end,",
+    "startMs": 33190,
+    "endMs": 34120,
+    "timestampMs": 33400,
+    "confidence": 0.79951
+  },
+  {
+    "text": " to",
+    "startMs": 34120,
+    "endMs": 34210,
+    "timestampMs": 34280,
+    "confidence": 0.970125
+  },
+  {
+    "text": " payments",
+    "startMs": 34210,
+    "endMs": 34570,
+    "timestampMs": 34600,
+    "confidence": 0.949999
+  },
+  {
+    "text": " and",
+    "startMs": 34570,
+    "endMs": 34700,
+    "timestampMs": 34920,
+    "confidence": 0.95247
+  },
+  {
+    "text": " shipping,",
+    "startMs": 34700,
+    "endMs": 35160,
+    "timestampMs": 35220,
+    "confidence": 0.970287
+  },
+  {
+    "text": " GST",
+    "startMs": 35160,
+    "endMs": 35790,
+    "timestampMs": 36160,
+    "confidence": 0.699583
+  },
+  {
+    "text": " and",
+    "startMs": 35790,
+    "endMs": 36050,
+    "timestampMs": 36480,
+    "confidence": 0.926205
+  },
+  {
+    "text": " admin",
+    "startMs": 36050,
+    "endMs": 36720,
+    "timestampMs": 36800,
+    "confidence": 0.957529
+  },
+  {
+    "text": " management.",
+    "startMs": 36720,
+    "endMs": 37720,
+    "timestampMs": 37240,
+    "confidence": 0.998839
+  },
+  {
+    "text": " After",
+    "startMs": 37720,
+    "endMs": 38120,
+    "timestampMs": 38320,
+    "confidence": 0.992996
+  },
+  {
+    "text": " that,",
+    "startMs": 38120,
+    "endMs": 38600,
+    "timestampMs": 38560,
+    "confidence": 0.975668
+  },
+  {
+    "text": " I",
+    "startMs": 38600,
+    "endMs": 38680,
+    "timestampMs": 38720,
+    "confidence": 0.997234
+  },
+  {
+    "text": " worked",
+    "startMs": 38680,
+    "endMs": 39000,
+    "timestampMs": 39020,
+    "confidence": 0.836378
+  },
+  {
+    "text": " on",
+    "startMs": 39000,
+    "endMs": 39160,
+    "timestampMs": 39280,
+    "confidence": 0.983817
+  },
+  {
+    "text": " AI",
+    "startMs": 39160,
+    "endMs": 39320,
+    "timestampMs": 39480,
+    "confidence": 0.95956
+  },
+  {
+    "text": " integrated",
+    "startMs": 39320,
+    "endMs": 40210,
+    "timestampMs": 39900,
+    "confidence": 0.989551
+  },
+  {
+    "text": " products,",
+    "startMs": 40210,
+    "endMs": 41020,
+    "timestampMs": 40400,
+    "confidence": 0.855319
+  },
+  {
+    "text": " a",
+    "startMs": 41020,
+    "endMs": 41300,
+    "timestampMs": 41520,
+    "confidence": 0.20325
+  },
+  {
+    "text": " Webflow-like",
+    "startMs": 41300,
+    "endMs": 42070,
+    "timestampMs": 41700,
+    "confidence": 0.940056
+  },
+  {
+    "text": " AI",
+    "startMs": 42070,
+    "endMs": 42230,
+    "timestampMs": 42440,
+    "confidence": 0.915457
+  },
+  {
+    "text": " page",
+    "startMs": 42230,
+    "endMs": 42550,
+    "timestampMs": 42620,
+    "confidence": 0.758044
+  },
+  {
+    "text": " builder,",
+    "startMs": 42550,
+    "endMs": 43360,
+    "timestampMs": 42900,
+    "confidence": 0.836926
+  },
+  {
+    "text": " a",
+    "startMs": 43360,
+    "endMs": 43530,
+    "timestampMs": 43660,
+    "confidence": 0.591322
+  },
+  {
+    "text": " school",
+    "startMs": 43530,
+    "endMs": 44120,
+    "timestampMs": 43960,
+    "confidence": 0.930586
+  },
+  {
+    "text": " bus",
+    "startMs": 44120,
+    "endMs": 44420,
+    "timestampMs": 44320,
+    "confidence": 0.953615
+  },
+  {
+    "text": " tracking",
+    "startMs": 44420,
+    "endMs": 45040,
+    "timestampMs": 44620,
+    "confidence": 0.980238
+  },
+  {
+    "text": " application,",
+    "startMs": 45040,
+    "endMs": 46210,
+    "timestampMs": 45160,
+    "confidence": 0.511131
+  },
+  {
+    "text": " CRM",
+    "startMs": 46210,
+    "endMs": 46490,
+    "timestampMs": 45780,
+    "confidence": 0.986173
+  },
+  {
+    "text": " and",
+    "startMs": 46490,
+    "endMs": 46710,
+    "timestampMs": 46080,
+    "confidence": 0.877169
+  },
+  {
+    "text": " ERP",
+    "startMs": 46710,
+    "endMs": 46950,
+    "timestampMs": 46280,
+    "confidence": 0.99839
+  },
+  {
+    "text": " solutions",
+    "startMs": 46950,
+    "endMs": 47720,
+    "timestampMs": 46800,
+    "confidence": 0.970517
+  },
+  {
+    "text": " and",
+    "startMs": 47720,
+    "endMs": 47970,
+    "timestampMs": 47560,
+    "confidence": 0.721656
+  },
+  {
+    "text": " several",
+    "startMs": 47970,
+    "endMs": 48560,
+    "timestampMs": 47940,
+    "confidence": 0.862639
+  },
+  {
+    "text": " real-world",
+    "startMs": 48560,
+    "endMs": 49500,
+    "timestampMs": 48220,
+    "confidence": 0.917807
+  },
+  {
+    "text": " client",
+    "startMs": 49500,
+    "endMs": 49910,
+    "timestampMs": 49680,
+    "confidence": 0.902799
+  },
+  {
+    "text": " products.",
+    "startMs": 49910,
+    "endMs": 50920,
+    "timestampMs": 50040,
+    "confidence": 0.719714
+  },
+  {
+    "text": " Now",
+    "startMs": 51000,
+    "endMs": 51160,
+    "timestampMs": 51180,
+    "confidence": 0.958491
+  },
+  {
+    "text": " I'm",
+    "startMs": 51160,
+    "endMs": 51400,
+    "timestampMs": 51340,
+    "confidence": 0.885022
+  },
+  {
+    "text": " looking",
+    "startMs": 51400,
+    "endMs": 51950,
+    "timestampMs": 51720,
+    "confidence": 0.990951
+  },
+  {
+    "text": " for",
+    "startMs": 51950,
+    "endMs": 52200,
+    "timestampMs": 52060,
+    "confidence": 0.991076
+  },
+  {
+    "text": " my",
+    "startMs": 52200,
+    "endMs": 52360,
+    "timestampMs": 52280,
+    "confidence": 0.984271
+  },
+  {
+    "text": " next",
+    "startMs": 52360,
+    "endMs": 52680,
+    "timestampMs": 52640,
+    "confidence": 0.99743
+  },
+  {
+    "text": " opportunity",
+    "startMs": 52680,
+    "endMs": 53560,
+    "timestampMs": 53120,
+    "confidence": 0.963165
+  },
+  {
+    "text": " where",
+    "startMs": 53560,
+    "endMs": 53950,
+    "timestampMs": 53780,
+    "confidence": 0.862172
+  },
+  {
+    "text": " I",
+    "startMs": 53950,
+    "endMs": 54040,
+    "timestampMs": 53980,
+    "confidence": 0.986256
+  },
+  {
+    "text": " can",
+    "startMs": 54040,
+    "endMs": 54280,
+    "timestampMs": 54120,
+    "confidence": 0.994586
+  },
+  {
+    "text": " work",
+    "startMs": 54280,
+    "endMs": 54760,
+    "timestampMs": 54500,
+    "confidence": 0.991488
+  },
+  {
+    "text": " with a",
+    "startMs": 54760,
+    "endMs": 54840,
+    "timestampMs": 55240,
+    "confidence": 0.770165
+  },
+  {
+    "text": " small",
+    "startMs": 54840,
+    "endMs": 55240,
+    "timestampMs": 55520,
+    "confidence": 0.949586
+  },
+  {
+    "text": " and",
+    "startMs": 55240,
+    "endMs": 55480,
+    "timestampMs": 55720,
+    "confidence": 0.973112
+  },
+  {
+    "text": " strong",
+    "startMs": 55480,
+    "endMs": 55960,
+    "timestampMs": 56060,
+    "confidence": 0.991223
+  },
+  {
+    "text": " team,",
+    "startMs": 55960,
+    "endMs": 56550,
+    "timestampMs": 56420,
+    "confidence": 0.926065
+  },
+  {
+    "text": " take",
+    "startMs": 56550,
+    "endMs": 56820,
+    "timestampMs": 56860,
+    "confidence": 0.90394
+  },
+  {
+    "text": " more",
+    "startMs": 56820,
+    "endMs": 57190,
+    "timestampMs": 57120,
+    "confidence": 0.998344
+  },
+  {
+    "text": " ownership",
+    "startMs": 57190,
+    "endMs": 58030,
+    "timestampMs": 57500,
+    "confidence": 0.970462
+  },
+  {
+    "text": " and",
+    "startMs": 58030,
+    "endMs": 58310,
+    "timestampMs": 58040,
+    "confidence": 0.936476
+  },
+  {
+    "text": " solve",
+    "startMs": 58310,
+    "endMs": 58770,
+    "timestampMs": 58320,
+    "confidence": 0.984814
+  },
+  {
+    "text": " bigger",
+    "startMs": 58770,
+    "endMs": 59330,
+    "timestampMs": 58640,
+    "confidence": 0.965048
+  },
+  {
+    "text": " problems,",
+    "startMs": 59330,
+    "endMs": 60250,
+    "timestampMs": 59020,
+    "confidence": 0.729424
+  },
+  {
+    "text": " and",
+    "startMs": 60250,
+    "endMs": 60530,
+    "timestampMs": 60260,
+    "confidence": 0.969784
+  },
+  {
+    "text": " grow",
+    "startMs": 60530,
+    "endMs": 60920,
+    "timestampMs": 60500,
+    "confidence": 0.990512
+  },
+  {
+    "text": " really",
+    "startMs": 60920,
+    "endMs": 61250,
+    "timestampMs": 60780,
+    "confidence": 0.964819
+  },
+  {
+    "text": " fast.",
+    "startMs": 61250,
+    "endMs": 61960,
+    "timestampMs": 61260,
+    "confidence": 0.986528
+  },
+  {
+    "text": " That's",
+    "startMs": 61960,
+    "endMs": 62420,
+    "timestampMs": 62040,
+    "confidence": 0.992212
+  },
+  {
+    "text": " a",
+    "startMs": 62420,
+    "endMs": 62570,
+    "timestampMs": 62300,
+    "confidence": 0.98622
+  },
+  {
+    "text": " little bit",
+    "startMs": 62570,
+    "endMs": 63040,
+    "timestampMs": 62620,
+    "confidence": 0.784242
+  },
+  {
+    "text": " about",
+    "startMs": 63040,
+    "endMs": 63430,
+    "timestampMs": 63080,
+    "confidence": 0.936448
+  },
+  {
+    "text": " me.",
+    "startMs": 63430,
+    "endMs": 63760,
+    "timestampMs": 63460,
+    "confidence": 0.994533
+  },
+  {
+    "text": " Let's",
+    "startMs": 63760,
+    "endMs": 64110,
+    "timestampMs": 64120,
+    "confidence": 0.742802
+  },
+  {
+    "text": " talk.",
+    "startMs": 64110,
+    "endMs": 65920,
+    "timestampMs": 64500,
+    "confidence": 0.490716
+  }
+]
