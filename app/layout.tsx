@@ -4,7 +4,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Saransh — Full-Stack Engineer | Intro Video',
-  description: 'Talking-head intro video built with Remotion: captions, project showcases and more.',
+  description: 'Cinematic Remotion intro video with music, enhanced voice, captions, project showcases and a black & white ending. Export in 1080p.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light',
-  themeColor: '#F7F7F5',
+  colorScheme: 'dark',
+  themeColor: '#0B0B0C',
 }
 
 export default function RootLayout({

@@ -2,10 +2,34 @@ import { Img, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { videoConfig } from "../config";
 import { fonts } from "../fonts";
 import { lerp, windowEnvelope } from "../utils/timing";
+import { AiPageBuilderScreen } from "./scenes/ai-page-builder/AiPageBuilder";
+import { AiSummarizerScreen } from "./scenes/ai-summarizer/AiSummarizer";
+import { CrmErpScreen } from "./scenes/crm-erp/CrmErp";
+import { EcommerceScene } from "./scenes/ecommerce/EcommerceScene";
+import { SchoolBusScreen } from "./scenes/school-bus/SchoolBus";
+import { SCENE } from "./scenes/shared";
 
 const BAR_HEIGHT = 40;
 
 type Props = { split: number };
+
+/** Maps project ids to their interactive scene components. */
+function ProjectScene({ id, t }: { id: string; t: number }) {
+  switch (id) {
+    case "ecommerce":
+      return <EcommerceScene t={t} />;
+    case "ai-products":
+      return <AiSummarizerScreen t={t} />;
+    case "ai-page-builder":
+      return <AiPageBuilderScreen t={t} />;
+    case "school-bus":
+      return <SchoolBusScreen t={t} />;
+    case "crm-erp":
+      return <CrmErpScreen t={t} />;
+    default:
+      return null;
+  }
+}
 
 export function BrowserMockup({ split }: Props) {
   const frame = useCurrentFrame();
@@ -18,6 +42,8 @@ export function BrowserMockup({ split }: Props) {
     project,
     ...windowEnvelope(frame, fps, project.start, project.end, 0.6, 0.5),
   }));
+
+  const t = frame / fps;
 
   return (
     <div
@@ -85,24 +111,41 @@ export function BrowserMockup({ split }: Props) {
       </div>
 
       <div style={{ position: "relative", width: "100%", height: box.height - BAR_HEIGHT, backgroundColor: "#FFFFFF" }}>
-        {states.map(({ project, enter, exit, value }) =>
-          value <= 0.001 ? null : (
-            <Img
+        {states.map(({ project, enter, exit, value }) => {
+          if (value <= 0.001) return null;
+
+          /** Does this project have an interactive scene? */
+          const hasScene = ["ecommerce", "ai-products", "ai-page-builder", "school-bus", "crm-erp"].includes(project.id);
+
+          return (
+            <div
               key={project.id}
-              src={staticFile(project.screenshot)}
               style={{
                 position: "absolute",
                 inset: 0,
                 width: "100%",
                 height: "100%",
-                objectFit: "cover",
-                objectPosition: "top center",
                 opacity: value,
                 transform: `translateY(${(1 - enter) * 28 - exit * 28}px) scale(${lerp(1.02, 1, enter)})`,
+                overflow: "hidden",
               }}
-            />
-          ),
-        )}
+            >
+              {hasScene ? (
+                <ProjectScene id={project.id} t={t} />
+              ) : (
+                <Img
+                  src={staticFile(project.screenshot)}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    objectPosition: "top center",
+                  }}
+                />
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );

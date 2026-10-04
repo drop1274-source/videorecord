@@ -8,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "studio": "remotion studio",
+    "audio": "node scripts/make-audio.mjs",
     "render": "remotion render IntroVideo out/intro-video.mp4",
+    "render:hq": "remotion render IntroVideo public/intro-video-1080p.mp4 --scale=1.5 --crf=16 --audio-bitrate=320k --jpeg-quality=95",
     "transcribe": "node scripts/transcribe.mjs"
   },
   "dependencies": {
@@ -17,8 +19,10 @@
     "@remotion/cli": "4.0.532",
     "@remotion/google-fonts": "4.0.532",
     "@remotion/install-whisper-cpp": "4.0.532",
+    "@remotion/media": "4.0.532",
     "@remotion/media-parser": "4.0.532",
     "@remotion/player": "4.0.532",
+    "@remotion/web-renderer": "4.0.532",
     "@vercel/analytics": "1.6.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

@@ -15,8 +15,8 @@ export function LowerThird() {
     <div
       style={{
         position: "absolute",
-        left: 40,
-        top: 40,
+        left: 64,
+        top: 292,
         opacity: value,
         transform: `translate(${(1 - enter) * -24}px, ${(1 - enter) * -8 + exit * -6}px)`,
         backgroundColor: "#FFFFFF",
