@@ -41,6 +41,34 @@ export default function Page() {
 
         <DownloadPanel />
 
+        <section aria-labelledby="cover-photo" className="flex flex-col gap-4">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h2 id="cover-photo" className="text-lg font-bold">
+                Cinematic Cover Photo / Thumbnail
+              </h2>
+              <p className="text-xs text-neutral-400">
+                Custom developer session cover with system architecture backdrop &amp; interactive HUD
+              </p>
+            </div>
+            <a
+              href="/cover-photo.png"
+              download="saransh-cover-photo.png"
+              className="inline-flex items-center gap-1.5 font-mono text-xs font-semibold text-[#E8442A] hover:underline"
+            >
+              Download Full HD PNG &rarr;
+            </a>
+          </div>
+          <div className="group relative overflow-hidden rounded-2xl border border-white/15 shadow-2xl bg-neutral-950">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/cover-photo.png"
+              alt="Developer Workspace Cover Photo"
+              className="w-full h-auto object-cover aspect-video transition-transform duration-500 group-hover:scale-[1.01]"
+            />
+          </div>
+        </section>
+
         <section aria-labelledby="edit" className="flex flex-col gap-4">
           <h2 id="edit" className="text-lg font-bold">
             {"What's in the edit"}

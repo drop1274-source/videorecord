@@ -159,10 +159,20 @@ export function DownloadPanel() {
             Cancel
           </Button>
         ) : (
-          <Button onClick={startRender} className="bg-[#E8442A] text-white hover:bg-[#d23a22]">
-            <Download aria-hidden="true" />
-            Export {preset.label} MP4
-          </Button>
+          <>
+            <Button onClick={startRender} className="bg-[#E8442A] text-white hover:bg-[#d23a22]">
+              <Download aria-hidden="true" />
+              Export {preset.label} MP4
+            </Button>
+            <a
+              href="/cover-photo.png"
+              download="saransh-portfolio-cover.png"
+              className="inline-flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-white/15 transition-colors"
+            >
+              <Download className="size-4" aria-hidden="true" />
+              Download Cover Photo (HD)
+            </a>
+          </>
         )}
         {isRendering && <Loader2 className="size-4 animate-spin text-neutral-400" aria-hidden="true" />}
         {status.kind === "done" && (
