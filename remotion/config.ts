@@ -27,11 +27,11 @@ export const videoConfig = {
     music: "audio/music.mp3",
     whoosh: "audio/whoosh.mp3",
     outroHit: "audio/outro-hit.mp3",
-    musicVolume: { open: 0.28, underSpeech: 0.07, outro: 0.38 },
+    musicVolume: { open: 0.24, underSpeech: 0.04, outro: 0.36 },
     sfxVolume: 0.32,
   },
   /** Colour grade applied to the talking head. */
-  grade: "contrast(1.08) saturate(1.14) brightness(1.04)",
+  grade: "contrast(1.10) saturate(1.18) brightness(1.02)",
   /** Only used until the real duration is read from raw.mp4. */
   fallbackDurationSec: 65.97,
 

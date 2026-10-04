@@ -1,109 +1,180 @@
-import { useCurrentFrame, useVideoConfig } from "remotion";
+import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { videoConfig } from "../config";
 import { fonts } from "../fonts";
+import { CLAMP, POP, springFrom } from "../utils/motion";
 import { windowEnvelope } from "../utils/timing";
-import { MaskText } from "./kinetic/MaskText";
 
-/**
- * Big kinetic text lines that appear during key moments in the speech,
- * using the MaskText "rise from behind" animation (Framer Motion style).
- *
- * Each line is synced to a specific caption timestamp from the audio.
- */
-const LINES = [
+type Badge = {
+  icon: string;
+  tag: string;
+  title: string;
+  sub: string;
+  side: "left" | "right";
+  top: number;
+  start: number;
+  end: number;
+  accent: string;
+};
+
+const BADGES: Badge[] = [
   {
-    text: "Full-Stack Engineer",
-    start: 3.5,
-    end: 7.0,
-    top: 120,
-    fontSize: 38,
-    color: "#FFFFFF",
+    icon: "⚡",
+    tag: "EXPERTISE",
+    title: "Full-Stack Engineer",
+    sub: "3+ Years Production Experience",
+    side: "right",
+    top: 220,
+    start: 3.4,
+    end: 8.5,
+    accent: "#6366F1",
   },
   {
-    text: "3 Years of Experience",
-    start: 4.8,
-    end: 7.0,
-    top: 172,
-    fontSize: 24,
-    color: videoConfig.colors.accent,
-  },
-  {
-    text: "E-Commerce · CRM · ERP",
-    start: 15.2,
+    icon: "🛍️",
+    tag: "PRODUCTION APP",
+    title: "End-to-End E-Commerce",
+    sub: "Payments · Logistics · GST",
+    side: "right",
+    top: 180,
+    start: 14.8,
     end: 18.0,
-    top: 130,
-    fontSize: 30,
-    color: "#FFFFFF",
+    accent: "#EC4899",
   },
   {
-    text: "AI Integrations",
-    start: 17.9,
-    end: 20.0,
-    top: 175,
-    fontSize: 26,
-    color: videoConfig.colors.accent,
+    icon: "🤖",
+    tag: "INNOVATION",
+    title: "AI Integrations",
+    sub: "GPT-4 · Automation · Workflows",
+    side: "left",
+    top: 280,
+    start: 17.8,
+    end: 21.2,
+    accent: "#8B5CF6",
   },
   {
-    text: "Mobile Apps · Dashboards",
-    start: 20.3,
-    end: 23.0,
-    top: 130,
-    fontSize: 28,
-    color: "#FFFFFF",
+    icon: "📍",
+    tag: "REAL-TIME",
+    title: "IoT & Map Tracking",
+    sub: "Live GPS & Fleet Operations",
+    side: "right",
+    top: 260,
+    start: 20.6,
+    end: 23.5,
+    accent: "#3B82F6",
   },
   {
-    text: "Custom Web Applications",
+    icon: "💼",
+    tag: "ENTERPRISE",
+    title: "Custom CRM & ERP",
+    sub: "Scalable Client Dashboards",
+    side: "left",
+    top: 200,
     start: 23.2,
     end: 25.3,
-    top: 170,
-    fontSize: 26,
-    color: videoConfig.colors.accent,
+    accent: "#10B981",
   },
-] as const;
+];
 
 export function KineticIntro() {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
 
-  // Only show kinetic text when NOT in split view (projects visible)
-  // These lines appear during the intro portion of the video (0-25s approx)
+  // Only show intro kinetic badges before project showcase
   const firstProjectStart = videoConfig.projects[0].start;
   if (t > firstProjectStart) return null;
 
   return (
     <>
-      {LINES.map((line) => {
-        const { value } = windowEnvelope(frame, fps, line.start, line.end, 0.5, 0.4);
+      {BADGES.map((b) => {
+        const { enter, exit, value } = windowEnvelope(frame, fps, b.start, b.end, 0.45, 0.35);
         if (value <= 0.001) return null;
+
+        const isLeft = b.side === "left";
+        const slideX = isLeft ? (1 - enter) * -40 + exit * -30 : (1 - enter) * 40 + exit * 30;
+        const scale = interpolate(enter, [0, 1], [0.92, 1], CLAMP);
 
         return (
           <div
-            key={`${line.text}-${line.start}`}
+            key={`${b.title}-${b.start}`}
             style={{
               position: "absolute",
-              left: 0,
-              right: 0,
-              top: line.top,
+              left: isLeft ? 54 : undefined,
+              right: !isLeft ? 54 : undefined,
+              top: b.top,
+              width: 300,
+              opacity: value,
+              transform: `translateX(${slideX}px) scale(${scale})`,
+              transformOrigin: isLeft ? "left center" : "right center",
+              backgroundColor: "rgba(15, 17, 26, 0.88)",
+              backdropFilter: "blur(20px)",
+              WebkitBackdropFilter: "blur(20px)",
+              borderRadius: 16,
+              padding: "16px 18px",
+              border: `1px solid rgba(255, 255, 255, 0.12)`,
+              boxShadow: `0 20px 48px rgba(0,0,0,0.5), 0 0 30px ${b.accent}22, inset 0 1px 0 rgba(255,255,255,0.18)`,
               display: "flex",
-              justifyContent: "center",
+              alignItems: "flex-start",
+              gap: 14,
               pointerEvents: "none",
+              zIndex: 10,
             }}
           >
-            <MaskText
-              text={line.text}
-              start={line.start}
-              exitAt={line.end - 0.3}
-              stagger={0.05}
+            <div
               style={{
-                fontFamily: fonts.sans,
-                fontSize: line.fontSize,
-                fontWeight: 800,
-                letterSpacing: -1,
-                color: line.color,
-                textShadow: "0 4px 24px rgba(0,0,0,0.5)",
+                width: 40,
+                height: 40,
+                borderRadius: 12,
+                backgroundColor: `${b.accent}20`,
+                border: `1px solid ${b.accent}40`,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: 20,
+                boxShadow: `0 4px 14px ${b.accent}30`,
+                flexShrink: 0,
               }}
-            />
+            >
+              {b.icon}
+            </div>
+
+            <div style={{ flex: 1 }}>
+              <div
+                style={{
+                  fontFamily: fonts.mono,
+                  fontSize: 10,
+                  fontWeight: 800,
+                  letterSpacing: 1.2,
+                  color: b.accent,
+                  textTransform: "uppercase",
+                  marginBottom: 3,
+                }}
+              >
+                {b.tag}
+              </div>
+              <div
+                style={{
+                  fontFamily: fonts.sans,
+                  fontSize: 15,
+                  fontWeight: 800,
+                  color: "#FFFFFF",
+                  letterSpacing: -0.2,
+                  lineHeight: 1.2,
+                }}
+              >
+                {b.title}
+              </div>
+              <div
+                style={{
+                  fontFamily: fonts.sans,
+                  fontSize: 11,
+                  color: "rgba(255,255,255,0.6)",
+                  marginTop: 3,
+                  fontWeight: 500,
+                }}
+              >
+                {b.sub}
+              </div>
+            </div>
           </div>
         );
       })}

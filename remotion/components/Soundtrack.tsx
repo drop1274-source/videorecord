@@ -55,7 +55,7 @@ export function Soundtrack({ videoEndSec }: Props) {
   return (
     <>
       <Sequence durationInFrames={toFrame(videoEndSec, fps)} name="Voice (enhanced)">
-        <Audio src={staticFile(audio.voice)} volume={1.6} />
+        <Audio src={staticFile(audio.voice)} volume={1.85} />
       </Sequence>
       <Audio src={staticFile(audio.music)} volume={musicVolume} name="Music" />
       {sfxTimes().map((t) => (

@@ -1,5 +1,6 @@
 import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { Backdrop } from "./components/Backdrop";
+import { BackgroundKineticText } from "./components/BackgroundKineticText";
 import { BrowserMockup } from "./components/BrowserMockup";
 import { CalloutCard } from "./components/CalloutCard";
 import { Captions } from "./components/Captions";
@@ -33,6 +34,7 @@ export function IntroVideo({ videoDurationSec = videoConfig.fallbackDurationSec 
         }}
       >
         <Backdrop split={split} />
+        <BackgroundKineticText split={split} />
         <TalkingHead split={split} />
         <BrowserMockup split={split} />
         {videoConfig.projects.map((project) => (

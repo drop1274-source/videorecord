@@ -18,10 +18,10 @@ export function Captions() {
   const sinceStart = timeMs - page.startMs;
   const untilEnd = page.endMs - timeMs;
   const opacity = Math.min(
-    interpolate(sinceStart, [0, 140], [0, 1], { extrapolateRight: "clamp" }),
+    interpolate(sinceStart, [0, 120], [0, 1], { extrapolateRight: "clamp" }),
     interpolate(untilEnd, [0, 120], [0, 1], { extrapolateRight: "clamp" }),
   );
-  const lift = interpolate(sinceStart, [0, 180], [8, 0], { extrapolateRight: "clamp" });
+  const lift = interpolate(sinceStart, [0, 160], [10, 0], { extrapolateRight: "clamp" });
 
   const activeIndex = page.words.reduce((idx, w, i) => (timeMs >= w.startMs ? i : idx), -1);
 
@@ -36,34 +36,68 @@ export function Captions() {
         justifyContent: "center",
         opacity,
         transform: `translateY(${lift}px)`,
+        pointerEvents: "none",
+        zIndex: 50,
       }}
     >
       <div
         style={{
-          backgroundColor: "rgba(17,17,17,0.78)",
+          backgroundColor: "rgba(10, 12, 18, 0.82)",
+          backdropFilter: "blur(24px)",
+          WebkitBackdropFilter: "blur(24px)",
           borderRadius: 999,
-          padding: "10px 26px 12px",
+          padding: "10px 24px 11px",
           display: "flex",
-          gap: 11,
+          alignItems: "center",
+          gap: 10,
           fontFamily: fonts.sans,
-          fontWeight: 700,
           fontSize: videoConfig.captions.fontSize,
-          lineHeight: 1.2,
+          lineHeight: 1.25,
           letterSpacing: -0.3,
           whiteSpace: "nowrap",
-          boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
+          border: "1px solid rgba(255,255,255,0.12)",
+          boxShadow: "0 16px 36px rgba(0,0,0,0.45), 0 0 20px rgba(0,0,0,0.25)",
         }}
       >
+        {/* Subtle glowing live speech indicator */}
+        <span
+          style={{
+            width: 7,
+            height: 7,
+            borderRadius: 999,
+            backgroundColor: "#22C55E",
+            boxShadow: "0 0 8px #22C55E",
+            display: "inline-block",
+            marginRight: 4,
+          }}
+        />
+
         {page.words.map((word, i) => {
           const isActive = i === activeIndex;
+          const wordElapsed = Math.max(0, (timeMs - word.startMs) / 1000);
+          const wordDuration = Math.max(0.1, (word.endMs - word.startMs) / 1000);
+
+          // Kinetic spring bounce for active word
+          const activeBounce = isActive
+            ? interpolate(wordElapsed, [0, 0.08, 0.2], [1, 1.16, 1.08], {
+                extrapolateLeft: "clamp",
+                extrapolateRight: "clamp",
+              })
+            : 1;
+
           return (
             <span
               key={`${word.startMs}-${i}`}
               style={{
                 display: "inline-block",
-                color: isActive ? "#FFFFFF" : "rgba(255,255,255,0.42)",
-                fontWeight: isActive ? 800 : 600,
-                transform: `scale(${isActive ? 1.04 : 1})`,
+                color: isActive ? "#FDE047" : "rgba(255, 255, 255, 0.48)",
+                fontWeight: isActive ? 900 : 600,
+                transform: `scale(${activeBounce})`,
+                transformOrigin: "center bottom",
+                transition: "color 0.08s ease",
+                textShadow: isActive
+                  ? "0 0 16px rgba(253, 224, 71, 0.6), 0 2px 8px rgba(0,0,0,0.8)"
+                  : "0 2px 4px rgba(0,0,0,0.5)",
               }}
             >
               {word.text}
