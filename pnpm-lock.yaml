@@ -12,22 +12,22 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0(@date-fns/tz@1.4.1)(@types/react@19.2.14)(date-fns@4.1.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@remotion/captions':
-        specifier: ^4.0.532
+        specifier: 4.0.532
         version: 4.0.532
       '@remotion/cli':
-        specifier: ^4.0.532
+        specifier: 4.0.532
         version: 4.0.532(@swc/helpers@0.5.23)(lightningcss@1.32.0)(postcss@8.5.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(supports-color@8.1.1)(typescript@5.7.3)
       '@remotion/google-fonts':
-        specifier: ^4.0.532
+        specifier: 4.0.532
         version: 4.0.532(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@remotion/install-whisper-cpp':
-        specifier: ^4.0.532
+        specifier: 4.0.532
         version: 4.0.532
       '@remotion/media-parser':
         specifier: 4.0.532
         version: 4.0.532
       '@remotion/player':
-        specifier: ^4.0.532
+        specifier: 4.0.532
         version: 4.0.532(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@vercel/analytics':
         specifier: 1.6.1
@@ -51,7 +51,7 @@ importers:
         specifier: ^19
         version: 19.2.4(react@19.2.4)
       remotion:
-        specifier: ^4.0.532
+        specifier: 4.0.532
         version: 4.0.532(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       shadcn:
         specifier: ^4.11.0
